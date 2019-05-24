@@ -11,7 +11,7 @@ RUN pip install -U pip
 RUN apt-get install -y gdal-bin libgdal-dev bash
 RUN pip install numpy jupyter requests
 RUN pip install oauth2client earthengine-api ipyleaflet
-RUN pip install shapely rasterio geopandas
+RUN pip install shapely rasterio geopandas matplotlib
 RUN pip install mercantile
 
 RUN mkdir -p /home/$NAME
