@@ -1,7 +1,6 @@
 #!/bin/bash
-PG_NAME=postgis
-PG_PASS=pw
-NAME=notebooks
+NAME=$(basename $PWD)
+PG_NAME=${NAME}_postgis
 
 docker build -t $NAME .
 docker run --name $PG_NAME -P --env-file .env -d --rm mdillon/postgis
