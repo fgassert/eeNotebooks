@@ -13,6 +13,7 @@ RUN pip install numpy jupyter requests
 RUN pip install oauth2client earthengine-api ipyleaflet
 RUN pip install shapely rasterio geopandas matplotlib
 RUN pip install psycopg2
+RUN pip install scipy sklearn
 RUN pip install mercantile
 
 RUN mkdir -p /home/$NAME
