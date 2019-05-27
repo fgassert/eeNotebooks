@@ -1,6 +1,6 @@
 #!/bin/bash
 NAME=$(basename $PWD)
-PG_NAME=${NAME}_postgis
+PG_NAME=postgis
 
 docker build -t $NAME .
 docker run --name $PG_NAME -P --env-file .env -d --rm mdillon/postgis
