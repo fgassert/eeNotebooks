@@ -8,9 +8,9 @@ RUN apt-get update --fix-missing
 RUN pip install -U pip
 
 # install application libraries
-RUN apt-get install -y gdal-bin libgdal-dev bash
+RUN apt-get install -y gdal-bin libgdal-dev ffmpeg bash
 RUN pip install numpy jupyter requests
-RUN pip install oauth2client earthengine-api ipyleaflet
+RUN pip install oauth2client earthengine-api google-cloud-storage ipyleaflet
 RUN pip install shapely rasterio geopandas matplotlib
 RUN pip install psycopg2
 RUN pip install scipy sklearn
